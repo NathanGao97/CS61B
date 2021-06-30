@@ -1,6 +1,6 @@
 
 public class NBody {
-    public static String imageToDraw = "images/starfield.jpg";
+    private static String imageToDraw = "images/starfield.jpg";
 
     public static double readRadius(String s) {
 	In in = new In(s);
@@ -26,13 +26,13 @@ public class NBody {
 	return Planets;
     }
 
-    public static void DrawBackground(double radius) {
+    private static void DrawBackground(double radius) {
 	StdDraw.setScale(-radius * 2, radius * 2);
 	StdDraw.clear();
 	StdDraw.picture(0, 0, imageToDraw);
     }
 
-    public static void DrawPlanets(Planet[] planets){
+    private static void DrawPlanets(Planet[] planets){
 	for(Planet p : planets) {
 	    p.draw();
 	}

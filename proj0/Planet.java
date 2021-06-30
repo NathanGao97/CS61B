@@ -1,8 +1,8 @@
 /** Project 0 */
 
 public class Planet {
-    public static double G = 6.67e-11;
-    public static String path = "images/";
+    private static double G = 6.67e-11;
+    private static String path = "images/";
 
     public double xxPos;
     public double yyPos;
